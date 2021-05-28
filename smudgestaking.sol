@@ -381,7 +381,7 @@ contract IProtocolFeeVault {
     uint public constant DAO_PERDENTAGE         = 20;
 
     address public userStakingPoolAddress;
-    address public lrcAddress;
+    address public smudgeAddress;
     address public tokenSellerAddress;
     address public daoAddress;
 
@@ -389,7 +389,7 @@ contract IProtocolFeeVault {
     uint claimedDAOFund;
     uint claimedBurn;
 
-    event LRCClaimed(uint amount);
+    event smudgeClaimed(uint amount);
     event DAOFunded(uint amountDAO, uint amountBurn);
     event TokenSold(address token, uint amount);
     event SettingsUpdated(uint time);
